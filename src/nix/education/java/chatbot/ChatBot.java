@@ -19,13 +19,24 @@ public class ChatBot {
         ChatBot chatBot = new ChatBot();
         chatBot.calcAge(s11);
         chatBot.numberQuestion(s11);
+        System.out.println("Why do we use methods?");
+        System.out.println("1. To repeat a statement multiple times.");
+        System.out.println("2. To decompose a program into several small subroutines");
+        System.out.println("3. To determine the execution time of a program.");
+        System.out.println("4. To interrupt the execution of a program.");
 
+        while (true) {
+            if (s11.next().contains("2")) {
+                System.out.println("Great, you right!\nGoodbye, have a nice day!");
+                break;
+            } else System.out.println("Please, try again.");
 
+        }
 
 
     }
 
-    private void calcAge(Scanner s11) {
+    void calcAge(Scanner s11) {
         int remainder7 = s11.nextInt();
         int remainder5 = s11.nextInt();
         int remainder3 = s11.nextInt();
@@ -33,7 +44,8 @@ public class ChatBot {
         System.out.println("Your age is " + age + " that's a good time to start programming!");
 
     }
-    private void numberQuestion(Scanner s11) {
+
+    void numberQuestion(Scanner s11) {
         int i3 = s11.nextInt();
         for (int i = 0; i < i3 + 1; i++) {
 
@@ -42,6 +54,5 @@ public class ChatBot {
 
         System.out.println("Let's test your programming knowledge.");
     }
-
-
 }
+
