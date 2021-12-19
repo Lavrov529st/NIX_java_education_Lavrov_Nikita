@@ -11,5 +11,7 @@ public class ChatBot {
         System.out.println();
         System.out.println("Hello! My name is  Vasia");
         System.out.println("I was created in " + localDate);
+        Scanner s11 = new Scanner(System.in);
+        System.out.println("What a great name you have, " + s11.nextLine());
     }
 }
